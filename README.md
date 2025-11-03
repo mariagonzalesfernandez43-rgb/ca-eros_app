@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Danza: Cañeros de San Jacinto — App informativa</title>
+  <style>
+    :root{--accent:#d6336c;--muted:#666;--bg:#fafafa}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+         margin:0;background:var(--bg);color:#111;line-height:1.5}
+    header{background:linear-gradient(90deg,#fff 0%,#ffeef3 100%);padding:20px 16px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+    .container{max-width:1000px;margin:18px auto;padding:0 16px}
+    h1{margin:.2em 0;font-size:1.9rem;color:#0b3b4a}
+    nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    nav a{padding:8px 12px;background:#fff;border-radius:10px;text-decoration:none;color:var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+    section.card{background:#fff;border-radius:12px;padding:16px;margin:16px 0;box-shadow:0 6px 20px rgba(16,24,40,.04)}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:16px}
+    .responsive{grid-template-columns:1fr}
+    @media (max-width:980px){.grid{grid-template-columns:1fr}}
+    .gallery{display:flex;flex-wrap:wrap;gap:8px}
+    .gallery img{width:calc(50% - 4px);border-radius:8px;object-fit:cover}
+    iframe{width:100%;height:260px;border:0;border-radius:8px}
+    .meta{color:var(--muted);font-size:.9rem}
+    .badge{display:inline-block;background:var(--accent);color:#fff;padding:6px 10px;border-radius:999px;font-weight:600}
+    .quiz{margin-top:12px}
+    .quiz button{background:var(--accent);color:#fff;border:0;padding:10px 12px;border-radius:8px;cursor:pointer}
+    footer{padding:12px 16px;text-align:center;color:var(--muted);font-size:.9rem}
+    .sources{font-size:.85rem;color:var(--muted);margin-top:8px}
+    .small{font-size:.88rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Cañeros de San Jacinto — App informativa</h1>
+      <p class="small">Resumen, imágenes, video y un juego simple. Información recopilada de fuentes públicas en internet.</p>
+      <nav>
+        <a href="#biografia">Biografía</a>
+        <a href="#historia">Reseña histórica</a>
+        <a href="#origen">Origen</a>
+        <a href="#vestimenta">Vestimenta</a>
+        <a href="#tradiciones">Tradiciones</a>
+        <a href="#homenaje">Homenaje</a>
+        <a href="#galeria">Galería</a>
+        <a href="#video">Video</a>
+        <a href="#juego">Juego</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="biografia" class="card">
+      <h2>Biografía de la danza</h2>
+      <p>
+        La danza "Cañeros de San Jacinto" es una expresión folclórica festivo-religiosa de la región de Áncash (Perú),
+        creada como representación y remembranza del trabajo de los cortadores de caña en las antiguas haciendas.
+      </p>
+      <p class="meta">Fuente: resúmenes consultados en Wikipedia y artículos locales.</p>
+    </section>
+
+    <section id="historia" class="card">
+      <h2>Reseña histórica</h2>
+      <p>
+        Se cuenta que la danza se originó en el valle de Purhuay y áreas aledañas, como una forma de expresar en la fiesta
+        local la vida de los trabajadores de la caña, con elementos satíricos que recuerdan a los hacendados y a las faenas en el campo.
+      </p>
+      <p class="small">En las presentaciones se incluyen pasos vigorosos, procesión con cruz, ofrendas y la quema o apilado de cañas como ritual simbólico.</p>
+    </section>
+
+    <div class="grid">
+      <section id="origen" class="card">
+        <h2>Origen</h2>
+        <p>
+          La danza proviene del pueblo de San Jacinto (departamento de Áncash) y se presenta tradicionalmente en las fiestas
+          patronales y celebraciones relacionadas con la cosecha y la caña de azúcar.
+        </p>
+        <p class="meta">Lugar de ejecución: festividades locales del valle de Purhuay y pueblos cercanos.</p>
+
+        <h3 id="vestimenta" style="margin-top:14px">Vestimenta</h3>
+        <p>
+          Los hombres suelen vestir traje blanco con máscara o careta, sombrero y faja; las mujeres llevan trajes coloridos,
+          faldas amplias usadas en los pasos y coronas de flores o diademas. Se usan machetes y brazos que simulan trabajo de campo.
+        </p>
+      </section>
+
+      <aside class="card">
+        <h3>Datos rápidos</h3>
+        <p class="badge">Tipo:</p>
+        <p class="small">Festivo-religioso / costumbrista</p>
+        <p class="badge" style="margin-top:8px">Instrumentos:</p>
+        <p class="small">Tambores, bombo, quenilla o pito.</p>
+      </aside>
+    </div>
+
+    <section id="tradiciones" class="card">
+      <h2>Tradiciones y costumbres</h2>
+      <ul>
+        <li>Procesión con una cruz adornada antes de la danza.</li>
+        <li>Ofrendas y cantos en la iglesia del pueblo en honor al santo patrón.</li>
+        <li>Jerarquía de personajes: capataz, cañeros, kiyayas (compañeras) y el crucero.</li>
+        <li>Rituales simbólicos: quema o apilado de cañas y demostraciones de destreza física.</li>
+      </ul>
+      <p class="meta">Estas fases aparecen en reseñas y documentos académicos y locales sobre la danza.</p>
+    </section>
+
+    <section id="homenaje" class="card">
+      <h2>Homenaje</h2>
+      <p>
+        La danza se presenta como homenaje al patrón del pueblo —San Jacinto— y forma parte de las celebraciones religiosas,
+        en particular en festividades que combinan devoción y manifestaciones populares.
+      </p>
+    </section>
+
+    <section id="galeria" class="card">
+      <h2>Galería (5 imágenes máximas)</h2>
+      <p class="small">Miniaturas extraídas de grabaciones públicas en línea.</p>
+      <div class="gallery" aria-hidden="false">
+        <!-- 5 miniaturas (YouTube thumbnails) -->
+        <img alt="Cañeros miniatura 1" src="https://img.youtube.com/vi/-ZjPtO-73Q0/hqdefault.jpg">
+        <img alt="Cañeros miniatura 2" src="https://img.youtube.com/vi/jV9tLCcIHBw/hqdefault.jpg">
+        <img alt="Cañeros miniatura 3" src="https://img.youtube.com/vi/3kUizOG3edM/hqdefault.jpg">
+        <img alt="Cañeros miniatura 4" src="https://img.youtube.com/vi/w-AV46XmsDc/hqdefault.jpg">
+        <img alt="Cañeros miniatura 5" src="https://img.youtube.com/vi/s2v5cABbfio/hqdefault.jpg">
+      </div>
+      <p class="sources">Imágenes: miniaturas públicas de videos sobre la danza.</p>
+    </section>
+
+    <section id="video" class="card">
+      <h2>Video (1)</h2>
+      <p class="small">Video embebido de una presentación típica — dale play para ver la danza en acción.</p>
+      <!-- Embedded YouTube video (ejemplo) -->
+      <iframe src="https://www.youtube.com/embed/3kUizOG3edM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Cañeros de San Jacinto"></iframe>
+      <p class="small meta">Fuente del video: grabaciones públicas en YouTube.</p>
+    </section>
+
+    <section id="juego" class="card">
+      <h2>Juego: Quiz rápido (divertido)</h2>
+      <p>Responde 4 preguntas sobre la danza. ¡Comprueba tus aciertos!</p>
+
+      <div id="quiz" class="quiz">
+        <div id="qArea"></div>
+        <div style="margin-top:10px">
+          <button id="nextBtn">Comenzar</button>
+        </div>
+        <p id="result" class="small" style="margin-top:10px"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Notas y recomendaciones</h2>
+      <p class="small">Si vas a publicar este contenido en una web pública recuerda: atribuir correctamente imágenes y videos a sus autores y respetar derechos de autor. Aquí hemos usado miniaturas y un video público para mostrar ejemplos.</p>
+
+      <div class="sources">
+        <strong>Fuentes consultadas (resumen):</strong>
+        <ul>
+          <li>Resumen enciclopédico y estructura de la danza: Wikipedia (Cañeros de San Jacinto). :contentReference[oaicite:0]{index=0}</li>
+          <li>Artículo local / descripción de la danza (costumbres y fases): costumbres.org. </li>
+          <li>Videos y grabaciones públicas (YouTube) que muestran el baile y la vestimenta: varios videos públicos. :contentReference[oaicite:2]{index=2}</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    App informativa generada automáticamente — contenido resumido y citado. © Cultura y tradiciones.
+  </footer>
+
+  <script>
+    // --- Quiz data (preguntas simples basadas en las fuentes) ---
+    const quizData = [
+      {
+        q: "¿De dónde es originaria la danza Cañeros de San Jacinto?",
+        options: ["Lima", "Áncash (San Jacinto)", "Cusco", "Puno"],
+        a: 1
+      },
+      {
+        q: "¿Qué representan los cañeros en la danza?",
+        options: ["La corte real", "A los cortadores de caña / trabajadores de hacienda", "Animales míticos", "Pescadores"],
+        a: 1
+      },
+      {
+        q: "¿Qué elemento se usa simbólicamente en la presentación?",
+        options: ["Cañas de azúcar", "Pernos de metal", "Sombrillas", "Caracoles"],
+        a: 0
+      },
+      {
+        q: "¿La danza se presenta como homenaje a...?",
+        options: ["San Jacinto (santo patrón)", "La Virgen de Guadalupe", "San Martín", "San Isidro Labrador"],
+        a: 0
+      }
+    ];
+
+    let idx = -1, score = 0;
+    const qArea = document.getElementById('qArea');
+    const nextBtn = document.getElementById('nextBtn');
+    const result = document.getElementById('result');
+
+    function showQuestion(i){
+      const q = quizData[i];
+      qArea.innerHTML = '';
+      const elQ = document.createElement('div');
+      elQ.innerHTML = '<strong>' + (i+1) + '. ' + q.q + '</strong>';
+      qArea.appendChild(elQ);
+      q.options.forEach((opt, j) => {
+        const btn = document.createElement('button');
+        btn.style.display = 'block';
+        btn.style.margin = '8px 0';
+        btn.textContent = opt;
+        btn.onclick = () => {
+          if(j === q.a){ score++; result.textContent = '¡Correcto!'; }
+          else { result.textContent = 'Incorrecto. Respuesta: ' + q.options[q.a]; }
+          nextBtn.textContent = (i+1 < quizData.length) ? 'Siguiente' : 'Finalizar';
+        };
+        qArea.appendChild(btn);
+      });
+    }
+
+    nextBtn.addEventListener('click', () => {
+      result.textContent = '';
+      if(nextBtn.textContent === 'Comenzar' || nextBtn.textContent === 'Siguiente'){
+        idx++;
+        if(idx < quizData.length){
+          showQuestion(idx);
+          nextBtn.textContent = 'Saltar/Responder';
+        } else {
+          // Finished
+          qArea.innerHTML = '<p><strong>Juego finalizado.</strong></p><p>Puntuación: ' + score + ' / ' + quizData.length + '</p>';
+          nextBtn.textContent = 'Reiniciar';
+        }
+      } else if(nextBtn.textContent === 'Finalizar' || nextBtn.textContent === 'Reiniciar'){
+        // Show final or restart
+        if(idx >= quizData.length){
+          // restart
+          idx = -1; score = 0; qArea.innerHTML = ''; result.textContent = '';
+          nextBtn.textContent = 'Comenzar';
+        } else {
+          idx = quizData.length; // move to finish
+          qArea.innerHTML = '<p><strong>Juego finalizado.</strong></p><p>Puntuación: ' + score + ' / ' + quizData.length + '</p>';
+          nextBtn.textContent = 'Reiniciar';
+        }
+      } else {
+        // fallback
+        idx = -1; score = 0; qArea.innerHTML = ''; result.textContent = ''; nextBtn.textContent = 'Comenzar';
+      }
+    });
+  </script>
+</body>
+</html>
